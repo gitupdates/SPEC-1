@@ -2482,3 +2482,10 @@ To https://github.com/gitupdates/SPEC-1
 To https://github.com/gitupdates/SPEC-1
    2132fec..deefcb3  main -> main
 [JB0TS] Auto-commit on 2025-06-14 19:29:41 :: Changes committed and pushed.
+hint: The '.git/hooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[main cd8d81e] [JB0TS] Auto-commit on 2025-06-14 19:29:57
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 1 file changed, 13 insertions(+)
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
