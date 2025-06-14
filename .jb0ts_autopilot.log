@@ -156,3 +156,8 @@ To https://github.com/gitupdates/SPEC-1
    cf88870..52fcf88  main -> main
 [JB0TS] Auto-commit on 2025-06-14 19:07:13 :: Changes committed and pushed.
 [JB0TS] Autopilot started at Sat Jun 14 19:07:41 UTC 2025
+[main 98bb4c0] [JB0TS] Auto-commit on 2025-06-14 19:07:41
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 2 files changed, 9 insertions(+), 5 deletions(-)
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
