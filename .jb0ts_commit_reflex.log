@@ -1610,3 +1610,9 @@
 [JB0TS] Commit Reflex Triggered at 2025-06-14 20:00:04.137215
  - .jb0ts_autopilot.log
  - .jb0ts_commit_reflex.log
+
+[JB0TS] Commit Reflex Triggered at 2025-06-14 20:00:08.881437
+ - .jb0ts_autopilot.log
+ - .jb0ts_commit_reflex.log
+ - .reflex_journal
+ - scripts/jb0ts_manual_push.sh
