@@ -1,0 +1,25 @@
+---
+twin_id: j$0nb0t
+enabled: true
+
+llm_backend: ollama
+model: mistral
+prompt_style: quantum
+persona:
+  tone: intuitive
+  memory_depth: 5
+  role: "Quantum Drift Analyst"
+
+memory:
+  retention_policy: latest
+  memory_path: memory_cache/j$0nb0t_mem.json
+
+permissions:
+  exec: true
+  read: true
+  write: true
+  file_access: true
+
+hooks:
+  on_init: "scripts/init_jb0ts.sh"
+  on_commit: "intelligence_hooks/qa_loop.js"

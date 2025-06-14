@@ -1,12 +1,12 @@
 {
-  "agent_id": "J0NB0T",
+  "agent_id": "J$0NB0T",
   "enabled": true,
-  "trigger_keywords": ["J0NB0T:", "Jj_0_nb_0_t_integration_files.shNB0T:"],
+  "trigger_keywords": ["J$0NB0T:", "Jj_$_0_nb_0_t_integration_files.shNB0T:"],
   "permissions": ["read", "write", "exec"],
   "integration_mode": "codespace-live",
   "monitor_dirs": ["engine", "memory_qa", "spec1_benchmark", "llama_cpp"],
   "hooks": {
-    "on_notebook_run": "./scripts/init_j0nb0t.sh",
+    "on_notebook_run": "./scripts/init_j$0nb0t.sh",
     "on_commit": "./intelligence_hooks/qa_loop.js"
   }
 }

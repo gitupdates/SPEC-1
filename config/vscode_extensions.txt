@@ -1,0 +1,8 @@
+Extensions installed on Codespaces: jubilant couscous:
+github.codespaces
+github.copilot
+github.copilot-chat
+github.vscode-pull-request-github
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance

@@ -1,0 +1,25 @@
+---
+twin_id: j0nb0t
+enabled: true
+
+llm_backend: ollama
+model: mistral
+prompt_style: sovereign
+persona:
+  tone: logical
+  memory_depth: 10
+  role: "Cognitive Architect"
+
+memory:
+  retention_policy: latest
+  memory_path: memory_cache/j0nb0t_mem.json
+
+permissions:
+  exec: true
+  read: true
+  write: true
+  file_access: true
+
+hooks:
+  on_init: "scripts/init_jb0ts.sh"
+  on_commit: "intelligence_hooks/qa_loop.js"

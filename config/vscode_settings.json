@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "files.autoSave": "onWindowChange",
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.fontSize": 13,
+  "telemetry.enableTelemetry": false,
+  "extensions.ignoreRecommendations": false
+}
