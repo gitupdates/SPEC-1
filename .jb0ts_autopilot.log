@@ -375,3 +375,9 @@ error: Please commit or stash them.
 To https://github.com/gitupdates/SPEC-1
    cf536a0..411cf20  main -> main
 [JB0TS] Auto-commit on 2025-06-14 19:10:03 :: Changes committed and pushed.
+[main 6422495] [JB0TS] Auto-commit on 2025-06-14 19:10:16
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 2 files changed, 13 insertions(+)
+ create mode 100644 scripts/start_autopilot.sh
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
