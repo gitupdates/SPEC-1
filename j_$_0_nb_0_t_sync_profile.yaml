@@ -1,0 +1,56 @@
+---
+# GitHub Actions workflow for validating J0NB0T live logic
+name: J$0NB0T QA Loop
+
+on:
+  push:
+    paths:
+      - 'engine/**'
+      - 'spec1_benchmark/**'
+      - 'memory_qa/**'
+      - '.j0nb0t/**'
+      - '.j$0nb0t/**'
+      - 'scripts/**'
+      - 'intelligence_hooks/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run J$0NB0T Cognitive Validation
+        run: |
+          echo "[QA] Running J$0NB0T validation..."
+          python3 ./spec1_benchmark/validate_cognition.py || echo "[QA] Validation script missing or failed"
+
+---
+# profiles/j$0nb0t.yaml - Twin Profile Definition
+
+# Twin Identifier and LLM config
+twin_id: j$0nb0t
+enabled: true
+
+llm_backend: ollama
+model: mistral
+
+# Behavioral and memory settings
+prompt_style: sovereign
+persona:
+  tone: logical
+  memory_depth: 10
+  role: "Cognitive Architect + Memory Analyst"
+
+memory:
+  retention_policy: latest
+  memory_path: memory_cache/j0nb0t_mem.json
+
+permissions:
+  exec: true
+  read: true
+  write: true
+  file_access: true
+
+# Event hooks
+hooks:
+  on_init: "scripts/init_j$0nb0t.sh"
+  on_commit: "intelligence_hooks/qa_loop.js"

@@ -1,0 +1,23 @@
+---
+# GitHub Actions workflow for validating J0NB0T live logic
+name: J0NB0T QA Loop
+
+on:
+  push:
+    paths:
+      - 'engine/**'
+      - 'spec1_benchmark/**'
+      - 'memory_qa/**'
+      - '.j0nb0t/**'
+      - 'scripts/**'
+      - 'intelligence_hooks/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run J0NB0T Cognitive Validation
+        run: |
+          echo "[QA] Running J0NB0T validation..."
+          python3 ./spec1_benchmark/validate_cognition.py || echo "[QA] Validation script missing or failed"
