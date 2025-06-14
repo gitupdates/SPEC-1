@@ -105,3 +105,9 @@
 [JB0TS] Commit Reflex Triggered at 2025-06-14 19:31:46.963287
  - .jb0ts_autopilot.log
  - .jb0ts_commit_reflex.log
+
+[JB0TS] Commit Reflex Triggered at 2025-06-14 19:32:03.457556
+ - .jb0ts_autopilot.log
+ - .jb0ts_commit_reflex.log
+ - .reflex_journal
+ - scripts/__pycache__/on_commit_reflex.cpython-312.pyc
