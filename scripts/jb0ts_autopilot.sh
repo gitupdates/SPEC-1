@@ -10,6 +10,12 @@ GIT_BRANCH="main"
 
 cd "$REPO_DIR" || exit 1
 
+echo "[JB0TS] Launching Autopilot..."
+bash scripts/jb0ts_autopilot.sh
+
+# Sovereign Twin Reflex Trigger
+python3 scripts/run_twin.py "Status update?"
+
 echo "[JB0TS] Autopilot started at $(date)" >> "$LOG_FILE"
 
 while true; do
