@@ -1,0 +1,27 @@
+name: JB0TS Integration Agent
+
+on:
+  push:
+    paths:
+      - '**.py'
+      - '**.sh'
+      - '**.yaml'
+      - '**.json'
+  workflow_dispatch:
+
+jobs:
+  jb0ts-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run JB0TS validator
+        run: |
+          chmod +x scripts/eval_filesystem_status.py
+          python3 scripts/eval_filesystem_status.py > logs/jb0ts_scan.log
+      - name: Commit scan result
+        run: |
+          git config user.name "JB0TS"
+          git config user.email "jb0ts@autonomous.io"
+          git add logs/jb0ts_scan.log
+          git commit -m "[JB0TS] Filesystem scan & validation"
+          git push || echo "Nothing to commit."
