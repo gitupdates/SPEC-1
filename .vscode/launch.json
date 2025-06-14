@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run J0NB0T Bridge",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/engine/boot/j0nb0t_node.py",
+      "args": ["--live"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

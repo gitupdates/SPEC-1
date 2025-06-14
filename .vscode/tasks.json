@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start J0NB0T Live Node",
+      "type": "shell",
+      "command": "bash scripts/init_j0nb0t.sh",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Boot the J0NB0T sovereign live bridge"
+    }
+  ]
+}
