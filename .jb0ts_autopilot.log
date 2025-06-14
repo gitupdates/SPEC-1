@@ -1791,3 +1791,8 @@ error: Please commit or stash them.
 To https://github.com/gitupdates/SPEC-1
    9e24baf..2559103  main -> main
 [JB0TS] Auto-commit on 2025-06-14 19:23:25 :: Changes committed and pushed.
+[main 5c4491a] [JB0TS] Auto-commit on 2025-06-14 19:23:27
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 1 file changed, 8 insertions(+)
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
