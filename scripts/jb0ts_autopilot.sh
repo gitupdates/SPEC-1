@@ -10,11 +10,6 @@ GIT_BRANCH="main"
 
 cd "$REPO_DIR" || exit 1
 
-
-# JB0TS Autopilot Background Sync
-nohup bash /workspaces/SPEC-1/scripts/jb0ts_autopilot.sh > /dev/null 2>&1 &
-
-
 echo "[JB0TS] Autopilot started at $(date)" >> "$LOG_FILE"
 
 while true; do
