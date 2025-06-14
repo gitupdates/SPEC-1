@@ -35966,3 +35966,27 @@ To https://github.com/gitupdates/SPEC-1
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at aa95d620cd683a5e9b65f56ac224f57277966c12 but expected c3e6663de85d456c5136cc5fc098d626b7d6e5e1)
 error: failed to push some refs to 'https://github.com/gitupdates/SPEC-1'
 [JB0TS] Auto-commit on 2025-06-14 21:26:10 :: Changes committed and pushed.
+fatal: Unable to create '/workspaces/SPEC-1/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+[JB0TS Reflex] Triggering on_commit_reflex.py...
+Everything up-to-date
+[JB0TS] Auto-commit on 2025-06-14 21:26:28 :: Changes committed and pushed.
+[JB0TS] Running test suite...
+============================= test session starts ==============================
+platform linux -- Python 3.12.1, pytest-8.3.5, pluggy-1.5.0
+rootdir: /workspaces/SPEC-1
+plugins: anyio-4.9.0
+collected 0 items
+
+============================ no tests ran in 0.60s =============================
+
+[JB0TS] ❌ Tests failed. Aborting commit reflex.
+[JB0TS Reflex] All checks passed. Proceeding with commit.
