@@ -2135,3 +2135,8 @@
 [JB0TS] Commit Reflex Triggered at 2025-06-14 20:09:18.626837
  - .jb0ts_autopilot.log
  - .jb0ts_commit_reflex.log
+
+[JB0TS] Commit Reflex Triggered at 2025-06-14 20:09:20.356920
+ - .jb0ts_autopilot.log
+ - .jb0ts_commit_reflex.log
+ - scripts/sovereign_core.py
