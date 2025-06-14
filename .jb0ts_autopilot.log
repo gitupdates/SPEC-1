@@ -2258,3 +2258,8 @@ To https://github.com/gitupdates/SPEC-1
 To https://github.com/gitupdates/SPEC-1
    7197a10..1652503  main -> main
 [JB0TS] Auto-commit on 2025-06-14 19:27:37 :: Changes committed and pushed.
+[main 3b255be] [JB0TS] Auto-commit on 2025-06-14 19:27:53
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 1 file changed, 11 insertions(+)
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
