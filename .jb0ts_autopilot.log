@@ -35686,3 +35686,112 @@ error: cannot pull with rebase: You have unstaged changes.
 error: additionally, your index contains uncommitted changes.
 error: Please commit or stash them.
 [JB0TS Reflex] Triggering on_commit_reflex.py...
+fatal: Unable to create '/workspaces/SPEC-1/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+[JB0TS Reflex] Triggering on_commit_reflex.py...
+To https://github.com/gitupdates/SPEC-1
+   929ef8d..f31556f  main -> main
+[JB0TS] Auto-commit on 2025-06-14 21:24:42 :: Changes committed and pushed.
+To https://github.com/gitupdates/SPEC-1
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at f31556fa078431e4a4d0b15109df489759f0c058 but expected 929ef8db378d099d63d83a868ffa71f8758d5c17)
+error: failed to push some refs to 'https://github.com/gitupdates/SPEC-1'
+[JB0TS] Auto-commit on 2025-06-14 21:24:51 :: Changes committed and pushed.
+[JB0TS] Running test suite...
+============================= test session starts ==============================
+platform linux -- Python 3.12.1, pytest-8.3.5, pluggy-1.5.0
+rootdir: /workspaces/SPEC-1
+plugins: anyio-4.9.0
+collected 0 items
+
+============================ no tests ran in 0.23s =============================
+
+[JB0TS] ❌ Tests failed. Aborting commit reflex.
+[JB0TS Reflex] All checks passed. Proceeding with commit.
+[JB0TS Reflex] Triggering on_commit_reflex.py...
+[JB0TS] Running test suite...
+============================= test session starts ==============================
+platform linux -- Python 3.12.1, pytest-8.3.5, pluggy-1.5.0
+rootdir: /workspaces/SPEC-1
+plugins: anyio-4.9.0
+collected 0 items
+
+============================ no tests ran in 0.62s =============================
+
+[JB0TS] ❌ Tests failed. Aborting commit reflex.
+[JB0TS] :: Post-commit reflex triggered
+[JB0TS Reflex] All checks passed. Proceeding with commit.
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .jb0ts_autopilot.log
+	modified:   .jb0ts_commit_reflex.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+To https://github.com/gitupdates/SPEC-1
+   f31556f..0d6f488  main -> main
+[JB0TS] Auto-commit on 2025-06-14 21:24:52 :: Changes committed and pushed.
+[JB0TS] Running test suite...
+Traceback (most recent call last):
+  File "/workspaces/SPEC-1/scripts/on_commit_reflex.py", line 40, in <module>
+    main()
+  File "/workspaces/SPEC-1/scripts/on_commit_reflex.py", line 35, in main
+    run_tests()
+  File "/workspaces/SPEC-1/scripts/on_commit_reflex.py", line 17, in run_tests
+    result = subprocess.run(["pytest", "--maxfail=1", "--disable-warnings"], capture_output=True, text=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/subprocess.py", line 2108, in _communicate
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[main 0d6f488] [JB0TS] Auto-commit on 2025-06-14 21:24:50
+ Author: gitupdates <50274075+gitupdates@users.noreply.github.com>
+ 2 files changed, 29 insertions(+)
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+Everything up-to-date
+[JB0TS] Auto-commit on 2025-06-14 21:24:50 :: Changes committed and pushed.
+[JB0TS] Running test suite...
+============================= test session starts ==============================
+platform linux -- Python 3.12.1, pytest-8.3.5, pluggy-1.5.0
+rootdir: /workspaces/SPEC-1
+plugins: anyio-4.9.0
+collected 0 items
+
+============================ no tests ran in 0.58s =============================
+
+[JB0TS] ❌ Tests failed. Aborting commit reflex.
+[JB0TS Reflex] All checks passed. Proceeding with commit.
+fatal: cannot lock ref 'HEAD': is at 0d6f4889eaf2fe0c795a6bdc98a85c794faa643b but expected f31556fa078431e4a4d0b15109df489759f0c058
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: Please commit or stash them.
+Everything up-to-date
+[JB0TS] Auto-commit on 2025-06-14 21:25:01 :: Changes committed and pushed.
+[JB0TS Reflex] Triggering on_commit_reflex.py...
+[JB0TS Reflex] Triggering on_commit_reflex.py...
+[JB0TS Reflex] Triggering on_commit_reflex.py...
