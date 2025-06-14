@@ -2031,3 +2031,7 @@
  - .jb0ts_autopilot.log
  - .jb0ts_commit_reflex.log
  - scripts/run_twin.py
+
+[JB0TS] Commit Reflex Triggered at 2025-06-14 20:07:19.978277
+ - .jb0ts_autopilot.log
+ - .jb0ts_commit_reflex.log
